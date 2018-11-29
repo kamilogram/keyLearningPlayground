@@ -51,7 +51,7 @@
 </head>
 <body>
   <div>
-    <span>Tu wpisz dowolne litery i/lub inne znaki które chcesz przećwiczyć (co najmniej 3):</span>
+    <span>Tu wpisz dowolne litery i/lub inne znaki które chcesz przećwiczyć (co najmniej 2):</span>
     <input id="signsToLearn" />
   </div>
   <div class='verticalAligned'>
@@ -107,7 +107,7 @@
     myInputElem.addEventListener('input', checkChar);
 
     function setSignsToLearn(value) {
-      if(value.length >= 3) {
+      if(value.length >= 2) {
         buttonElem.removeAttribute("disabled");
         buttonElem.setAttribute('title', 'losuj');
       } else {
